@@ -3,7 +3,7 @@
     "id": "metadata-harvester",
     "title": "Ecological Metadata Harvester",
     "subtitle": "Automated Ingestion & API Gateway",
-    "description": "An enterprise-grade full-stack system designed to ingest, validate, and manage scientific metadata (Movebank XML and Darwin Core Archives) with database persistence, backend-agnostic ingestion pipelines and DSpace integration.",
+    "description": "An enterprise-grade full-stack system designed to ingest, validate and manage scientific metadata (Movebank XML and Darwin Core Archives) with database persistence, backend-agnostic ingestion pipelines and DSpace integration.",
     "techStack": ["Spring Boot", "Angular", "PostgreSQL", "Neon DB", "Docker"],
     "liveUrl": "https://metadata-harvester.pages.dev",
     "githubUrl": "https://github.com/wixhub/metadata-harvester",
