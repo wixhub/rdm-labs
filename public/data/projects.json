@@ -41,9 +41,9 @@
     "subtitle": "Experimental Data & Signal Processing",
     "description": "Modern scientific dashboard designed to visualize multi-dimensional sensor streams, combining GPS tracking with accelerometer and environmental data through synchronized time-series charts.",
     "techStack": ["Angular", "Chart.js", "TypeScript", "Reactive Forms", "SCSS"],
-    "liveUrl": "#",
-    "githubUrl": "https://github.com/wixhub/sensor-streams-dashboard",
-    "status": "In Development",
+    "liveUrl": "https://sensor-streams.pages.dev",
+    "githubUrl": "https://github.com/wixhub/sensor-streams",
+    "status": "Live",
     "badge": "Analytics Hub",
     "symbol": "∰"
   },
