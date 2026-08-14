@@ -29,9 +29,9 @@
     "subtitle": "Movebank Data Repository / Animal Tracking",
     "description": "High-performance scientific web application for interactive playback and visualization of animal migration telemetry over geographical map layers, incorporating timeline controls and speed scaling.",
     "techStack": ["Movebank API", "Angular", "TypeScript", "Leaflet.js", "Signals"],
-    "liveUrl": "#",
-    "githubUrl": "https://github.com/wixhub/spatial-temporal-playback",
-    "status": "In Development",
+    "liveUrl": "https://spatial-temporal.pages.dev",
+    "githubUrl": "https://github.com/wixhub/spatial-temporal",
+    "status": "Live",
     "badge": "Interactive Playback",
     "symbol": "☊"
   },
