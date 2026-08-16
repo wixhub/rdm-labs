@@ -10,4 +10,9 @@ export class ProjectService {
   readonly projectsResource = httpResource<Project[]>(() => 'data/projects.json', {
     defaultValue: [],
   });
+
+  // Fetch individual project detail dynamically using a reactive function wrapper for httpResource
+  getProjectDetails(id: string) {
+    return httpResource<Partial<Project>>(() => `data/projects/${id}.json`);
+  }
 }
