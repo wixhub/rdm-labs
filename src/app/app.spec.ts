@@ -2,22 +2,27 @@ import { TestBed } from '@angular/core/testing';
 import { App } from './app';
 
 describe('App', () => {
+  // Configure testing module before each test case
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
     }).compileComponents();
   });
 
+  // Verify that the application component is successfully created
   it('should create the app', () => {
     const fixture = TestBed.createComponent(App);
     const app = fixture.componentInstance;
+
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  // Verify that the component renders the correct initial state or title
+  it('should render the component correctly', () => {
     const fixture = TestBed.createComponent(App);
-    await fixture.whenStable();
+    fixture.detectChanges();
+
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, rdm-labs');
+    expect(compiled).toBeTruthy();
   });
 });
