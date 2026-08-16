@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideRouter, ActivatedRoute } from '@angular/router';
 import { signal } from '@angular/core';
+import { of } from 'rxjs';
 import { ProjectDetail } from './project-detail';
 import { ProjectService } from '../../core/services/project.service';
 import { Project } from '../../core/models/project.model';
@@ -8,40 +9,44 @@ import { Project } from '../../core/models/project.model';
 describe('ProjectDetail', () => {
   let component: ProjectDetail;
   let fixture: ComponentFixture<ProjectDetail>;
+  let projectServiceMock: Partial<ProjectService>;
 
-  const mockProjects: Project[] = [
-    {
-      id: '1',
-      title: 'Angular 22 App',
-      subtitle: 'Modern Framework',
-      description: 'Cutting-edge features',
-      techStack: ['Angular', 'Signals'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example',
-      status: 'Live',
-      badge: 'Latest',
-      symbol: '⚡',
-    },
-  ];
-
-  // Mock implementation of ProjectService leveraging Angular signals
-  const mockProjectService = {
-    projectsResource: {
-      value: signal<Project[]>(mockProjects),
-      isLoading: signal<boolean>(false),
-    },
+  const mockProject: Project = {
+    id: 'movebank-explorer-web',
+    title: 'MoveRDM Dataset Explorer',
+    subtitle: 'MoveRDM Initiative / MPIAB & University of Konstanz',
+    description:
+      'High-performance research data repository frontend built for the MoveRDM initiative.',
+    techStack: ['Angular 22', 'TypeScript', 'Signals'],
+    liveUrl: 'https://movebank-explorer.pages.dev',
+    githubUrl: 'https://github.com/wixhub/movebank-explorer-web',
+    status: 'Live',
+    badge: 'Core Telemetry & Open Science',
+    symbol: '🦩',
+    researchDomain: 'Ecological & Behavioral Animal Tracking',
   };
 
   beforeEach(async () => {
+    projectServiceMock = {
+      projectsResource: {
+        value: () => [mockProject],
+        isLoading: () => false,
+      } as any,
+      getProjectDetails: vi.fn().mockReturnValue({
+        value: () => ({ longDescription: 'Detailed architecture data' }),
+        isLoading: () => false,
+      }),
+    };
+
     await TestBed.configureTestingModule({
       imports: [ProjectDetail],
       providers: [
         provideRouter([]),
-        { provide: ProjectService, useValue: mockProjectService },
+        { provide: ProjectService, useValue: projectServiceMock },
         {
           provide: ActivatedRoute,
           useValue: {
-            paramMap: signal(new Map([['id', '1']])),
+            paramMap: of(new Map([['id', 'movebank-explorer-web']])),
           },
         },
       ],
@@ -79,7 +84,7 @@ describe('ProjectDetail', () => {
       imports: [ProjectDetail],
       providers: [
         provideRouter([]),
-        { provide: ProjectService, useValue: mockProjectService },
+        { provide: ProjectService, useValue: projectServiceMock },
         {
           provide: ActivatedRoute,
           useValue: {

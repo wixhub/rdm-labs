@@ -16,17 +16,26 @@
         <h1>{{ p.title }}</h1>
         <p class="subtitle">{{ p.subtitle }}</p>
 
+        <!-- Research Domain Tag -->
+        @if (p.researchDomain) {
+          <div class="research-domain-tag">
+            <span>🔬 Research Domain: {{ p.researchDomain }}</span>
+          </div>
+        }
+
         <div class="tech-stack">
           @for (tech of p.techStack; track tech) {
             <span>{{ tech }}</span>
           }
         </div>
 
+        <!-- Overview & Objective -->
         <section class="section-block">
           <h3>Overview & Objective</h3>
           <p>{{ p.description }}</p>
         </section>
 
+        <!-- Technical Implementation & Architecture -->
         @if (p.longDescription) {
           <section class="section-block">
             <h3>Technical Implementation & Architecture</h3>
@@ -34,10 +43,57 @@
           </section>
         }
 
+        <!-- Dynamic Architecture Pipeline -->
+        @if (p.architecture) {
+          <section class="section-block">
+            <h3>{{ p.architecture.title }}</h3>
+            <p>{{ p.architecture.description }}</p>
+            <ul class="pipeline-steps">
+              @for (step of p.architecture.steps; track step) {
+                <li>{{ step }}</li>
+              }
+            </ul>
+          </section>
+        }
+
+        <!-- Scientific Impact -->
+        @if (p.scientificImpact?.length) {
+          <section class="section-block">
+            <h3>Scientific & Institutional Impact</h3>
+            <ul class="impact-list">
+              @for (impact of p.scientificImpact; track impact) {
+                <li>{{ impact }}</li>
+              }
+            </ul>
+          </section>
+        }
+
+        <!-- Key Capabilities / Features -->
+        @if (p.keyFeatures?.length) {
+          <section class="section-block">
+            <h3>Key Capabilities</h3>
+            <div class="features-grid">
+              @for (feature of p.keyFeatures; track feature) {
+                <div class="feature-chip">✓ {{ feature }}</div>
+              }
+            </div>
+          </section>
+        }
+
         <div class="actions">
-          @if (p.liveUrl !== '#') {
+          @if (p.liveUrl && p.liveUrl !== '#') {
             <a [href]="p.liveUrl" target="_blank" class="cosmic-btn primary"
               >Launch Live Portal ↗</a
+            >
+          }
+          @if (p.backendApi && p.backendApi !== '#') {
+            <a [href]="p.backendApi" target="_blank" class="cosmic-btn primary"
+              >Backend REST API ↗</a
+            >
+          }
+          @if (p.worker && p.worker !== '#') {
+            <a [href]="p.worker" target="_blank" class="cosmic-btn primary"
+              >Launch Worker on Cloudflare ↗</a
             >
           }
           <a [href]="p.githubUrl" target="_blank" class="cosmic-btn secondary"
