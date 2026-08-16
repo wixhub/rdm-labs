@@ -53,9 +53,9 @@
     "subtitle": "Ecological Metadata Management & QC",
     "description": "Interactive web utility for researchers working with animal tracking data, featuring automated client-side anomaly detection, data cleaning workflows and high-performance data grids.",
     "techStack": ["Angular", "TypeScript", "Signals", "Data Grids", "SCSS"],
-    "liveUrl": "#",
-    "githubUrl": "https://github.com/wixhub/data-curation-tool",
-    "status": "In Development",
+    "liveUrl": "https://data-curation.pages.dev",
+    "githubUrl": "https://github.com/wixhub/data-curation",
+    "status": "Live",
     "badge": "Data Pipeline",
     "symbol": "🐘"
   },
@@ -65,9 +65,9 @@
     "subtitle": "Advanced Migration Mapping",
     "description": "Next-generation spatial rendering engine for migratory animal tracking data, engineered for ecological metadata management and reactive spatial filtering using advanced GIS layers.",
     "techStack": ["Leaflet GIS", "RxJS", "Open Science", "TypeScript"],
-    "liveUrl": "#",
-    "githubUrl": "https://github.com/wixhub/bio-telemetry-visualizer",
-    "status": "In Development",
+    "liveUrl": "https://bio-stream.pages.dev",
+    "githubUrl": "https://github.com/wixhub/bio-stream",
+    "status": "Live",
     "badge": "Upcoming Orbit",
     "symbol": "🦅"
   }
