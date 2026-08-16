@@ -1,25 +1,19 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ProjectService } from '../../core/services/project.service';
-import { Project } from '../../core/models/project.model';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, RouterLink],
+  imports: [RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
-export class Home implements OnInit {
-  private projectService = inject(ProjectService);
+export class Home {
+  private readonly projectService = inject(ProjectService);
 
-  projects = signal<Project[]>([]);
-  isLoading = signal<boolean>(true);
+  // Expose the projects directly from the underlying httpResource value
+  readonly projects = this.projectService.projectsResource.value;
 
-  ngOnInit(): void {
-    this.projectService.getProjects().subscribe((data) => {
-      this.projects.set(data);
-      this.isLoading.set(false);
-    });
-  }
+  // Expose the loading state directly from the underlying httpResource status
+  readonly isLoading = this.projectService.projectsResource.isLoading;
 }
