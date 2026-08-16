@@ -1,9 +1,14 @@
 import { Routes } from '@angular/router';
-import { Home } from './features/home/home';
-import { ProjectDetail } from './features/project-detail/project-detail';
 
 export const routes: Routes = [
-  { path: '', component: Home },
-  { path: 'project/:id', component: ProjectDetail },
+  {
+    path: '',
+    loadComponent: () => import('./features/home/home').then((m) => m.Home),
+  },
+  {
+    path: 'project/:id',
+    loadComponent: () =>
+      import('./features/project-detail/project-detail').then((m) => m.ProjectDetail),
+  },
   { path: '**', redirectTo: '' },
 ];
