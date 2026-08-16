@@ -1,0 +1,46 @@
+{
+  "id": "movebank-explorer-web",
+  "title": "MoveRDM Dataset Explorer",
+  "subtitle": "MoveRDM Initiative / MPIAB & University of Konstanz",
+  "description": "High-performance research data repository frontend built for the MoveRDM initiative, featuring live integration with the Movebank API via Cloudflare Workers, dynamic query building and client-side stream parsing.",
+  "longDescription": "Engineered specifically to support modern research data management (RDM) workflows for ecological and behavioral telemetry. The architecture bridges local mock storage with high-throughput scientific data pipelines, utilizing a secure Cloudflare Workers proxy to handle authentication, CORS mitigation, and raw TSV/CSV stream parsing on the fly into reactive Angular models.",
+  "techStack": [
+    "Angular 22",
+    "TypeScript",
+    "Signals",
+    "Spring / Java Ecosystem",
+    "Cloudflare Workers",
+    "Movebank API",
+    "DSpace Integration"
+  ],
+  "liveUrl": "https://movebank-explorer.pages.dev",
+  "githubUrl": "https://github.com/wixhub/movebank-explorer-web",
+  "worker": "https://wispy-surf-c9db.rublin.workers.dev",
+  "status": "Live",
+  "badge": "Core Telemetry & Open Science",
+  "symbol": "🦩",
+  "researchDomain": "Eological & Behavioral Animal Tracking (MPIAB Collaboration)",
+  "architecture": {
+    "title": "Middleware & Data Ingestion Pipeline",
+    "description": "Decoupled architecture ensuring secure credential handling and high-speed telemetry parsing for scientific workflows.",
+    "steps": [
+      "Secure API Gateway & Basic Auth injection via Cloudflare Workers proxy",
+      "Dynamic query generation targeting Movebank entities (study, tag_type, taxon, deployment)",
+      "Asynchronous client-side CSV/TSV raw stream parsing into type-safe Angular signals",
+      "Persistent data structures compatible with institutional repositories (DSpace / PostgreSQL)"
+    ]
+  },
+  "scientificImpact": [
+    "Streamlines access to massive multi-dimensional animal tracking datasets for researchers",
+    "Reduces latency through reactive client-side caching and optimized data grids",
+    "Ensures compliance with open science data sharing and metadata standards (Darwin Core / Movebank XML)"
+  ],
+  "keyFeatures": [
+    "Multi-repository dataset search with real-time faceted filtering across ecological and telemetry parameters",
+    "Seamless DSpace institutional repository integration for direct metadata publishing and DOI minting",
+    "Advanced spatial bounding box and temporal range query tools for precise geographic data retrieval",
+    "Interactive dataset preview supporting tabular metadata, spatial layers, and file structure inspection",
+    "Automated schema validation against Darwin Core and Movebank standards before synchronization",
+    "Export capabilities supporting multiple formats including JSON, CSV, and Darwin Core Archives"
+  ]
+}

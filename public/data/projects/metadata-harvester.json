@@ -1,0 +1,48 @@
+{
+  "id": "metadata-harvester",
+  "title": "Ecological Metadata Harvester",
+  "subtitle": "Enterprise-grade system for ecological metadata ingestion, validation, and DSpace repository integration",
+  "description": "An enterprise-grade system designed to ingest, validate and manage ecological metadata such as Movebank XML and Darwin Core Archives with integration into institutional DSpace repositories.",
+  "longDescription": "The system is split into an enterprise backend (Java 21, Spring Boot, WebFlux, PostgreSQL, Flyway) and a modern frontend administrative dashboard (Angular 22, Signals, Standalone Components). It provides multi-format scientific file uploads, real-time metrics tracking, automated metadata validation, and DSpace repository synchronization.",
+  "techStack": [
+    "Java 21",
+    "Spring Boot",
+    "WebFlux",
+    "PostgreSQL",
+    "Flyway",
+    "Angular 22",
+    "TypeScript",
+    "Signals",
+    "DSpace Integration"
+  ],
+  "liveUrl": "https://metadata-harvester.pages.dev",
+  "backendApi": "https://metadata-harvester-backend.onrender.com/swagger-ui/index.html",
+  "githubUrl": "https://github.com/wixhub/metadata-harvester",
+  "status": "Live",
+  "badge": "Java & Spring / Open Science",
+  "symbol": "🏛️",
+  "researchDomain": "Research Data Management & Institutional Repositories (DSpace)",
+  "architecture": {
+    "title": "Full-Stack Repository Ingestion Pipeline",
+    "description": "Decoupled enterprise architecture bridging Spring Boot microservices with an Angular 22 administrative dashboard.",
+    "steps": [
+      "Backend REST API built with Spring Boot, WebFlux, and Spring Data JPA handling metadata validation and database management via Flyway",
+      "Secure local persistence layer utilizing PostgreSQL (hosted via Neon / Docker) with isolated sandbox execution support",
+      "Angular 22 Single Page Application administrative dashboard providing multi-format upload wizards and repository explorers",
+      "Seamless integration bridge targeting institutional DSpace repositories and standard formats like Movebank XML and Darwin Core Archives (DwC-A)"
+    ]
+  },
+  "scientificImpact": [
+    "Automates the ingestion and validation of complex multi-format ecological metadata standards",
+    "Streamlines synchronization between local research data pipelines and institutional DSpace repositories",
+    "Provides researchers and administrators with robust audit trails, provenance logs, and anomaly detection"
+  ],
+  "keyFeatures": [
+    "Multi-format scientific ingestion supporting Movebank XML, Darwin Core Archives, and JSON Schemas",
+    "Real-time administrative dashboard tracking dataset metrics, successful harvests, and validation failures",
+    "Repository explorer for inspecting harvested metadata records and diagnosing structural status",
+    "Enterprise-ready Java 21 / Spring Boot backend featuring interactive OpenAPI/Swagger documentation",
+    "Asynchronous processing pipeline handling high-volume metadata ingestion without blocking threads",
+    "Secure local database persistence via PostgreSQL with Flyway database migration management"
+  ]
+}

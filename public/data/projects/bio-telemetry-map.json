@@ -1,0 +1,45 @@
+{
+  "id": "bio-telemetry-map",
+  "title": "Bio-Telemetry Spatial Visualizer",
+  "subtitle": "Next-generation spatial rendering engine for migratory animal tracking data",
+  "description": "Next-generation spatial rendering engine for migratory animal tracking data, engineered for ecological metadata management and reactive spatial filtering using advanced GIS layers.",
+  "longDescription": "The Bio-Telemetry Spatial Visualizer is built as an enterprise-grade Angular 22 single-page application. It completely bypasses Zone.js in favor of experimental zoneless change detection to maximize frame-rate performance for high-frequency Leaflet GIS canvas rendering and real-time telemetry streaming.",
+  "techStack": [
+    "Angular 22",
+    "TypeScript",
+    "Signals",
+    "Zoneless Change Detection",
+    "Leaflet GIS",
+    "RxJS",
+    "Standalone Components"
+  ],
+  "liveUrl": "https://bio-telemetry-map.pages.dev",
+  "githubUrl": "https://github.com/wixhub/bio-telemetry-map",
+  "status": "Live",
+  "badge": "GIS & Spatial Rendering",
+  "symbol": "🗺️",
+  "researchDomain": "Ecological Metadata Management & Spatial Tracking",
+  "architecture": {
+    "title": "Zoneless GIS & Rendering Pipeline",
+    "description": "High-throughput rendering architecture optimized for dense geographic telemetry streams.",
+    "steps": [
+      "Experimental zoneless execution eliminating Zone.js overhead for maximum frame rates",
+      "Fine-grained state synchronization using Angular Signals and toSignal() bridges",
+      "Strict modular standalone architecture with lazy-loaded deferrable views (@defer)",
+      "Decoupled Leaflet GIS integration managed via enterprise services with DestroyRef cleanup"
+    ]
+  },
+  "scientificImpact": [
+    "Enables real-time rendering of complex high-frequency migratory animal tracking paths",
+    "Eliminates UI jank during heavy spatial filtering and geographic zooming operations",
+    "Provides a robust blueprint for modern open science ecological visualization tools"
+  ],
+  "keyFeatures": [
+    "High-performance vector and marker layer rendering using optimized Leaflet.js integrations",
+    "Signal-powered reactive filtering for instant updates across species, tags, and date ranges",
+    "Spatial bounding box selection tools to isolate specific geographic study areas and subsets",
+    "Multi-layered environmental overlay support combining tracking paths with terrain and climate data",
+    "Interactive popup inspection for detailed individual telemetry logs and timestamp records",
+    "Export capabilities for filtered geospatial subsets in standard formats like GeoJSON and CSV"
+  ]
+}

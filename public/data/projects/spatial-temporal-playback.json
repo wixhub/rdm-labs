@@ -1,0 +1,37 @@
+{
+  "id": "spatial-temporal-playback",
+  "title": "Spatial-Temporal Migration Playback",
+  "subtitle": "Movebank Data Repository / Animal Tracking",
+  "description": "A high-performance scientific web application built with Angular 22 (with Signals), TypeScript, Leaflet.js, and SCSS for interactive playback and visualization of animal migration telemetry over geographical map layers.",
+  "longDescription": "Engineered for advanced animal migration analysis, this application combines Leaflet.js map integration with a custom timeline playboard featuring playback controls, speed scaling, and reactive state management powered by Angular Signals.",
+  "techStack": ["Angular 22", "TypeScript", "Signals", "Leaflet.js", "SCSS", "RxJS"],
+  "liveUrl": "https://spatial-temporal.pages.dev",
+  "githubUrl": "https://github.com/wixhub/spatial-temporal",
+  "status": "Live",
+  "badge": "Spatial-Temporal Simulation",
+  "symbol": "⏳",
+  "researchDomain": "Migration Telemetry & Temporal Playback",
+  "architecture": {
+    "title": "Spatial-Temporal Playback Pipeline",
+    "description": "High-performance reactive architecture coordinating map rendering with temporal animation streams.",
+    "steps": [
+      "Interactive map viewport rendering historical migration polylines and real-time interpolated markers via Leaflet.js",
+      "Custom timeline controller supporting play, pause, scrubbing, and speed scaling (1x to 50x)",
+      "Reactive state handling powered by Angular Signals for tracking playback time, active datasets, and speed",
+      "Robust data layer supporting Movebank formats with offline mock dataset fallback modes"
+    ]
+  },
+  "scientificImpact": [
+    "Allows researchers to visually analyze temporal patterns in complex animal migration paths",
+    "Provides smooth animation and scrubbing across vast chronological datasets without UI lag",
+    "Streamlines inspection of individual tracking trajectories and metadata"
+  ],
+  "keyFeatures": [
+    "Interactive Leaflet.js map integration rendering historical migration polylines and real-time markers",
+    "Custom timeline playboard with scrubbing, pause/play, and variable speed scaling (1x to 50x)",
+    "Reactive state management powered by Angular Signals for synchronized temporal data reactivity",
+    "Sleek scientific dashboard layout equipped with collapsible sidebar filtering and metadata tools",
+    "Support for Movebank CSV/JSON telemetry payloads with offline mock dataset fallback modes",
+    "Optimized rendering pipeline ensuring smooth animation across vast chronological datasets without lag"
+  ]
+}

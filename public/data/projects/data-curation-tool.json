@@ -1,0 +1,37 @@
+{
+  "id": "data-curation-tool",
+  "title": "Movebank Data Curation & Quality Control Tool",
+  "subtitle": "Interactive web utility for inspecting, cleaning, and validating raw animal tracking data",
+  "description": "An interactive, fully responsive web utility built with Angular 22 designed to help researchers inspect, clean, and validate raw animal tracking data prior to analysis or repository publication.",
+  "longDescription": "Engineered for high-throughput data curation, this tool provides researchers with automated outlier detection algorithms that flag suspicious telemetry points like impossible speed jumps, coupled with an interactive review dashboard for cleaning and exporting datasets locally.",
+  "techStack": ["Angular 22", "TypeScript", "Signals", "SCSS", "CSS Grid", "Leaflet.js"],
+  "liveUrl": "https://data-curation-tool.pages.dev",
+  "githubUrl": "https://github.com/wixhub/data-curation-tool",
+  "status": "Live",
+  "badge": "Data Quality & Validation",
+  "symbol": "🔬",
+  "researchDomain": "Ecological Data Curation & Quality Control",
+  "architecture": {
+    "title": "Data Curation & Processing Pipeline",
+    "description": "Client-side pipeline designed for real-time telemetry inspection and anomaly flagging.",
+    "steps": [
+      "Adaptive layout rendering via SCSS and CSS Grid for seamless multi-device support",
+      "Automated client-side outlier detection algorithms identifying impossible speed jumps",
+      "Interactive review dashboard to visually inspect anomalies and toggle inclusion status",
+      "Local export mechanisms supporting cleaned datasets in CSV or JSON formats"
+    ]
+  },
+  "scientificImpact": [
+    "Significantly reduces manual data cleaning overhead for large-scale animal tracking studies",
+    "Ensures high data integrity prior to institutional repository publication or scientific analysis",
+    "Empowers field researchers with instant client-side validation tools"
+  ],
+  "keyFeatures": [
+    "Interactive tabular data grid designed for real-time ecological record inspection and editing",
+    "Automated data cleaning pipelines detecting coordinate anomalies, missing timestamps, and outliers",
+    "Batch validation engine checking records against strict Darwin Core and Movebank schemas",
+    "Version-controlled modification history tracking every curation change with full audit logs",
+    "One-click export of cleaned datasets ready for institutional repository ingestion",
+    "Customizable transformation rules allowing bulk updates across large telemetry datasets"
+  ]
+}
