@@ -5,7 +5,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Cloudflare Pages Deployment](https://img.shields.io/badge/Cloudflare-Pages-000?style=flat&logo=cloudflare&logoColor=white)](https://pages.cloudflare.com)
 
-Interactive scientific hub for animal tracking, spatial-temporal migration playback, and multidimensional bio-telemetry data visualization
+Interactive scientific hub for animal tracking, spatial-temporal migration playback and multidimensional bio-telemetry data visualization
 
 ---
 
@@ -17,6 +17,10 @@ Interactive scientific hub for animal tracking, spatial-temporal migration playb
   - `public/data/{id}.json` contains full technical specifications and deep-dive descriptions fetched dynamically via Angular services when viewing a specific project route (`/project/:id`).
 
 ---
+
+## 🚀 Live Demo
+
+🔗 **[View Live Application on Cloudflare Pages](https://psychophysiology.pages.dev)**
 
 ## 🛠️ Tech Stack
 
