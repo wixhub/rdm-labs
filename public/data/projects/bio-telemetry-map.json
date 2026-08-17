@@ -4,15 +4,7 @@
   "subtitle": "Next-generation spatial rendering engine for migratory animal tracking data",
   "description": "Next-generation spatial rendering engine for migratory animal tracking data, engineered for ecological metadata management and reactive spatial filtering using advanced GIS layers.",
   "longDescription": "The Bio-Telemetry Spatial Visualizer is built as an enterprise-grade Angular 22 single-page application. It completely bypasses Zone.js in favor of experimental zoneless change detection to maximize frame-rate performance for high-frequency Leaflet GIS canvas rendering and real-time telemetry streaming.",
-  "techStack": [
-    "Angular 22",
-    "TypeScript",
-    "Signals",
-    "Zoneless Change Detection",
-    "Leaflet GIS",
-    "RxJS",
-    "Standalone Components"
-  ],
+  "techStack": ["Angular 22", "TypeScript", "Signals", "RxJS", "Leaflet GIS", "RDM / Open Science"],
   "liveUrl": "https://bio-telemetry-map.pages.dev",
   "githubUrl": "https://github.com/wixhub/bio-telemetry-map",
   "status": "Live",

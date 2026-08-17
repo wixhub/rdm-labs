@@ -8,10 +8,12 @@
     "Angular 22",
     "TypeScript",
     "Signals",
-    "Spring / Java Ecosystem",
     "Cloudflare Workers",
+    "REST API",
+    "Cloudflare Workers",
+    "DSpace Integration",
     "Movebank API",
-    "DSpace Integration"
+    "RDM / Open Science"
   ],
   "liveUrl": "https://movebank-explorer.pages.dev",
   "githubUrl": "https://github.com/wixhub/movebank-explorer-web",

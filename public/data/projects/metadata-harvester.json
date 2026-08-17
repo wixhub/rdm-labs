@@ -13,7 +13,11 @@
     "Angular 22",
     "TypeScript",
     "Signals",
-    "DSpace Integration"
+    "DSpace Integration",
+    "RDBMS",
+    "Docker",
+    "REST API",
+    "RDM / Open Science"
   ],
   "liveUrl": "https://metadata-harvester.pages.dev",
   "backendApi": "https://metadata-harvester-backend.onrender.com/swagger-ui/index.html",

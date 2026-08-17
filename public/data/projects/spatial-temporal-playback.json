@@ -4,7 +4,17 @@
   "subtitle": "Movebank Data Repository / Animal Tracking",
   "description": "A high-performance scientific web application built with Angular 22 (with Signals), TypeScript, Leaflet.js, and SCSS for interactive playback and visualization of animal migration telemetry over geographical map layers.",
   "longDescription": "Engineered for advanced animal migration analysis, this application combines Leaflet.js map integration with a custom timeline playboard featuring playback controls, speed scaling, and reactive state management powered by Angular Signals.",
-  "techStack": ["Angular 22", "TypeScript", "Signals", "Leaflet.js", "SCSS", "RxJS"],
+  "techStack": [
+    "Angular 22",
+    "TypeScript",
+    "Signals",
+    "RxJS",
+    "Leaflet.js",
+    "SCSS",
+    "Movebank API",
+    "REST API",
+    "RDM / Open Science"
+  ],
   "liveUrl": "https://spatial-temporal.pages.dev",
   "githubUrl": "https://github.com/wixhub/spatial-temporal",
   "status": "Live",

@@ -4,7 +4,16 @@
   "subtitle": "Interactive web utility for inspecting, cleaning, and validating raw animal tracking data",
   "description": "An interactive, fully responsive web utility built with Angular 22 designed to help researchers inspect, clean, and validate raw animal tracking data prior to analysis or repository publication.",
   "longDescription": "Engineered for high-throughput data curation, this tool provides researchers with automated outlier detection algorithms that flag suspicious telemetry points like impossible speed jumps, coupled with an interactive review dashboard for cleaning and exporting datasets locally.",
-  "techStack": ["Angular 22", "TypeScript", "Signals", "SCSS", "CSS Grid", "Leaflet.js"],
+  "techStack": [
+    "Angular 22",
+    "TypeScript",
+    "Signals",
+    "SCSS",
+    "Leaflet.js",
+    "Data Grids",
+    "Metadata Quality Control",
+    "RDM / Open Science"
+  ],
   "liveUrl": "https://data-curation-tool.pages.dev",
   "githubUrl": "https://github.com/wixhub/data-curation-tool",
   "status": "Live",
