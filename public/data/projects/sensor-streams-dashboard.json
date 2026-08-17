@@ -2,7 +2,7 @@
   "id": "sensor-streams-dashboard",
   "title": "Multi-Dimensional Sensor Streams Dashboard",
   "subtitle": "Production-grade scientific dashboard for visualizing complex multi-dimensional animal tracking and environmental telemetry streams",
-  "description": "A production-grade scientific dashboard designed for visualizing complex multi-dimensional animal tracking and environmental telemetry streams sourced from Movebank. Built using Angular 22 featuring native Signals, stable Zoneless architecture, and modern reactive forms.",
+  "description": "A production-grade scientific dashboard designed for visualizing complex multi-dimensional animal tracking and environmental telemetry streams sourced from Movebank. Built using Angular 22 featuring native Signals, stable Zoneless architecture and modern reactive forms.",
   "longDescription": "Engineered for high-frequency environmental and behavioral tracking data, this dashboard leverages stable zoneless architecture and Angular Signals to deliver performant multi-axis charting and real-time statistical evaluation without Zone.js overhead.",
   "techStack": [
     "Angular 22",
@@ -27,7 +27,7 @@
     "steps": [
       "Stable zoneless execution utilizing Angular 22 reactivity standards without Zone.js overhead",
       "Synchronized multi-axis time-series charting handling acceleration and temperature streams via Chart.js",
-      "Adaptive statistical cards computing real-time minimum, maximum, and average indicators",
+      "Adaptive statistical cards computing real-time minimum, maximum and average indicators",
       "Fluid CSS grid layout featuring custom SCSS mixins for seamless multi-device responsiveness"
     ]
   },
@@ -40,7 +40,7 @@
     "Zoneless and signal-powered state management for peak rendering performance in Angular 22",
     "Synchronized multi-axis time-series graphs for high-frequency sensor streams (Acceleration & Temp)",
     "Fluid responsive grid layouts reflowing smoothly across desktop monitors and mobile devices",
-    "Adaptive statistical cards displaying live minimum, maximum, and average indicator metrics",
+    "Adaptive statistical cards displaying live minimum, maximum and average indicator metrics",
     "Reactive forms integration allowing custom filtering of telemetry channels on the fly",
     "Optimized chart rendering preventing memory leaks during intensive real-time updates"
   ]

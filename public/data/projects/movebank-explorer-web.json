@@ -3,7 +3,7 @@
   "title": "MoveRDM Dataset Explorer",
   "subtitle": "MoveRDM Initiative / MPIAB & University of Konstanz",
   "description": "High-performance research data repository frontend built for the MoveRDM initiative, featuring live integration with the Movebank API via Cloudflare Workers, dynamic query building and client-side stream parsing.",
-  "longDescription": "Engineered specifically to support modern research data management (RDM) workflows for ecological and behavioral telemetry. The architecture bridges local mock storage with high-throughput scientific data pipelines, utilizing a secure Cloudflare Workers proxy to handle authentication, CORS mitigation, and raw TSV/CSV stream parsing on the fly into reactive Angular models.",
+  "longDescription": "Engineered specifically to support modern research data management (RDM) workflows for ecological and behavioral telemetry. The architecture bridges local mock storage with high-throughput scientific data pipelines, utilizing a secure Cloudflare Workers proxy to handle authentication, CORS mitigation and raw TSV/CSV stream parsing on the fly into reactive Angular models.",
   "techStack": [
     "Angular 22",
     "TypeScript",
@@ -41,8 +41,8 @@
     "Multi-repository dataset search with real-time faceted filtering across ecological and telemetry parameters",
     "Seamless DSpace institutional repository integration for direct metadata publishing and DOI minting",
     "Advanced spatial bounding box and temporal range query tools for precise geographic data retrieval",
-    "Interactive dataset preview supporting tabular metadata, spatial layers, and file structure inspection",
+    "Interactive dataset preview supporting tabular metadata, spatial layers and file structure inspection",
     "Automated schema validation against Darwin Core and Movebank standards before synchronization",
-    "Export capabilities supporting multiple formats including JSON, CSV, and Darwin Core Archives"
+    "Export capabilities supporting multiple formats including JSON, CSV and Darwin Core Archives"
   ]
 }

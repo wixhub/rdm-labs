@@ -2,8 +2,8 @@
   "id": "spatial-temporal-playback",
   "title": "Spatial-Temporal Migration Playback",
   "subtitle": "Movebank Data Repository / Animal Tracking",
-  "description": "A high-performance scientific web application built with Angular 22 (with Signals), TypeScript, Leaflet.js, and SCSS for interactive playback and visualization of animal migration telemetry over geographical map layers.",
-  "longDescription": "Engineered for advanced animal migration analysis, this application combines Leaflet.js map integration with a custom timeline playboard featuring playback controls, speed scaling, and reactive state management powered by Angular Signals.",
+  "description": "A high-performance scientific web application built with Angular 22 (with Signals), TypeScript, Leaflet.js and SCSS for interactive playback and visualization of animal migration telemetry over geographical map layers.",
+  "longDescription": "Engineered for advanced animal migration analysis, this application combines Leaflet.js map integration with a custom timeline playboard featuring playback controls, speed scaling and reactive state management powered by Angular Signals.",
   "techStack": [
     "Angular 22",
     "TypeScript",
@@ -26,8 +26,8 @@
     "description": "High-performance reactive architecture coordinating map rendering with temporal animation streams.",
     "steps": [
       "Interactive map viewport rendering historical migration polylines and real-time interpolated markers via Leaflet.js",
-      "Custom timeline controller supporting play, pause, scrubbing, and speed scaling (1x to 50x)",
-      "Reactive state handling powered by Angular Signals for tracking playback time, active datasets, and speed",
+      "Custom timeline controller supporting play, pause, scrubbing and speed scaling (1x to 50x)",
+      "Reactive state handling powered by Angular Signals for tracking playback time, active datasets and speed",
       "Robust data layer supporting Movebank formats with offline mock dataset fallback modes"
     ]
   },
@@ -38,7 +38,7 @@
   ],
   "keyFeatures": [
     "Interactive Leaflet.js map integration rendering historical migration polylines and real-time markers",
-    "Custom timeline playboard with scrubbing, pause/play, and variable speed scaling (1x to 50x)",
+    "Custom timeline playboard with scrubbing, pause/play and variable speed scaling (1x to 50x)",
     "Reactive state management powered by Angular Signals for synchronized temporal data reactivity",
     "Sleek scientific dashboard layout equipped with collapsible sidebar filtering and metadata tools",
     "Support for Movebank CSV/JSON telemetry payloads with offline mock dataset fallback modes",

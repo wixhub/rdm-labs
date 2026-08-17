@@ -28,7 +28,7 @@
   ],
   "keyFeatures": [
     "High-performance vector and marker layer rendering using optimized Leaflet.js integrations",
-    "Signal-powered reactive filtering for instant updates across species, tags, and date ranges",
+    "Signal-powered reactive filtering for instant updates across species, tags and date ranges",
     "Spatial bounding box selection tools to isolate specific geographic study areas and subsets",
     "Multi-layered environmental overlay support combining tracking paths with terrain and climate data",
     "Interactive popup inspection for detailed individual telemetry logs and timestamp records",

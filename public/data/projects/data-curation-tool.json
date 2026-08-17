@@ -1,8 +1,8 @@
 {
   "id": "data-curation-tool",
   "title": "Movebank Data Curation & Quality Control Tool",
-  "subtitle": "Interactive web utility for inspecting, cleaning, and validating raw animal tracking data",
-  "description": "An interactive, fully responsive web utility built with Angular 22 designed to help researchers inspect, clean, and validate raw animal tracking data prior to analysis or repository publication.",
+  "subtitle": "Interactive web utility for inspecting, cleaning and validating raw animal tracking data",
+  "description": "An interactive, fully responsive web utility built with Angular 22 designed to help researchers inspect, clean and validate raw animal tracking data prior to analysis or repository publication.",
   "longDescription": "Engineered for high-throughput data curation, this tool provides researchers with automated outlier detection algorithms that flag suspicious telemetry points like impossible speed jumps, coupled with an interactive review dashboard for cleaning and exporting datasets locally.",
   "techStack": [
     "Angular 22",
@@ -37,7 +37,7 @@
   ],
   "keyFeatures": [
     "Interactive tabular data grid designed for real-time ecological record inspection and editing",
-    "Automated data cleaning pipelines detecting coordinate anomalies, missing timestamps, and outliers",
+    "Automated data cleaning pipelines detecting coordinate anomalies, missing timestamps and outliers",
     "Batch validation engine checking records against strict Darwin Core and Movebank schemas",
     "Version-controlled modification history tracking every curation change with full audit logs",
     "One-click export of cleaned datasets ready for institutional repository ingestion",
