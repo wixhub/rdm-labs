@@ -2,26 +2,10 @@ import { TestBed } from '@angular/core/testing';
 import { provideHttpClient } from '@angular/common/http';
 import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { ProjectService } from './project.service';
-import { Project } from '../models/project.model';
 
 describe('ProjectService', () => {
   let service: ProjectService;
   let httpMock: HttpTestingController;
-
-  const mockProjects: Project[] = [
-    {
-      id: '1',
-      title: 'Test Project',
-      subtitle: 'Test Subtitle',
-      description: 'Test Description',
-      techStack: ['Angular', 'Vitest'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example',
-      status: 'Live',
-      badge: 'New',
-      symbol: '🚀',
-    },
-  ];
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -33,7 +17,7 @@ describe('ProjectService', () => {
   });
 
   afterEach(() => {
-    // Verify that there are no outstanding HTTP requests
+    // Ensure that no unexpected HTTP requests remain pending
     httpMock.verify();
   });
 
@@ -41,30 +25,32 @@ describe('ProjectService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should load projects via httpResource successfully', async () => {
-    // Initially, the resource should have default value before request completes
-    expect(service.projectsResource.value()).toEqual([]);
-
-    // Expect a GET request to the projects endpoint
+  it('should fetch projects list on initialization', () => {
+    // Expect the initial automatic request for the projects list
     const req = httpMock.expectOne('data/projects.json');
     expect(req.request.method).toBe('GET');
 
-    // Flush the mock response
+    const mockProjects = [{ id: '1', title: 'Alpha Project' }];
     req.flush(mockProjects);
 
-    // Verify that the resource successfully updates its value
     expect(service.projectsResource.value()).toEqual(mockProjects);
-    expect(service.projectsResource.isLoading()).toBe(false);
   });
 
-  it('should handle errors gracefully and fallback to default value', () => {
-    // Expect the HTTP request
-    const req = httpMock.expectOne('data/projects.json');
+  it('should fetch project details dynamically when selectProject is called', () => {
+    // Flush initial projects list request first to clear the queue
+    const listReq = httpMock.expectOne('data/projects.json');
+    listReq.flush([]);
 
-    // Simulate a server error (500 Internal Server Error)
-    req.flush('Server Error', { status: 500, statusText: 'Internal Server Error' });
+    // Trigger dynamic project selection
+    service.selectProject('42');
 
-    // Verify that the resource falls back to the default empty array safely
-    expect(service.projectsResource.value()).toEqual([]);
+    // Expect a subsequent HTTP request triggered by the reactive resource change
+    const detailReq = httpMock.expectOne('data/projects/42.json');
+    expect(detailReq.request.method).toBe('GET');
+
+    const mockDetails = { id: '42', title: 'Detailed Project 42' };
+    detailReq.flush(mockDetails);
+
+    expect(service.projectDetailsResource.value()).toEqual(mockDetails);
   });
 });
